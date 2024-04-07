@@ -1,8 +1,8 @@
 # 04. Git - домашнее задание
 
-## Part1:
+## Part1
 
-- сделать git clone репозитория git@github.com:alsigna/python2024-01-git-hw.git
+- сделать git clone репозитория `git@github.com:alsigna/python2024-01-git-hw.git`
 - найти commit c описанием "update sw"
 - удалить этот коммит и все изменения после него включительно (коммит с описанием “update sw” так же удаляем)
 - определить версию ПО для платформы "ASR920 Series" из файла sw.csv (запишем на бумажке)
@@ -53,9 +53,10 @@ modemfux@python-vm:~/n4e/python2024-01-git-hw [master ↓·7|✔]> cat sw.csv | 
 ASR920 Series,,3.16.5S
 modemfux@python-vm:~/n4e/python2024-01-git-hw [master ↓·7|✔]>
 ```
-## Part2:
 
-- сделать fork репозитория git@github.com:alsigna/python2024-01-git-hw.git
+## Part2
+
+- сделать fork репозитория `git@github.com:alsigna/python2024-01-git-hw.git`
 - найти netbox-token NB_TOKEN
 
 ```bash
@@ -67,7 +68,7 @@ modemfux@python-vm:~/n4e/python2024-01-git-hw [master|✔]> git log origin/maste
 modemfux@python-vm:~/n4e/python2024-01-git-hw [master|✔]>
 ```
 
-## Part3:
+## Part3
 
 - создать файл в корне вашего форкнутого репозитории с именем, равным вашему имени git пользователя
 - записать в этот файл версию ПО из part1 и netbox token из part2
