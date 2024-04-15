@@ -196,7 +196,7 @@ Local Interface         Exptime(s) Neighbor Interface            Neighbor Device
 10GE1/0/1                     105  10GE1/0/1                     test-server.stg
 """.strip()
 
-result1 = output.replace("\r\n", "\n").replace("-\n", "").replace("-", "")
+result1 = output.replace("\r\n", "\n").replace("-\n", "").replace("--", "")
 print("Task 4.6 variant 1: with replace")
 print(result1, end="\n" * 2)
 
