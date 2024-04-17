@@ -15,3 +15,5 @@ venv/
 #pytest's files#
 .coverage
 
+# Lections folder
+lec_slides/
