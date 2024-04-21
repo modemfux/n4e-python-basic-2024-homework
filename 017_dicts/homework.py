@@ -75,15 +75,15 @@ print("=" * 60, end="\n" * 2)
 
 print("Task2: Список словарей")
 
-# fmt: off
 dev3_values = [
     "wlc.abcd.net",
     "192.168.1.3",
     "wlc_admin",
     "password",
     "",
-    False]
-# fmt: on
+    False,
+]
+
 devices_list = [device1, device2]
 devices_list.append(dict(zip(keys, dev3_values)))
 print("device_list is:")
@@ -117,8 +117,8 @@ print("Task3: Вложенный словарь (словарь словарей
 
 devices_dict = {
     devices_list[0]["hostname"]: devices_list[0],
-    devices_list[1]["hostname"]: devices_list[0],
-    devices_list[2]["hostname"]: devices_list[0],
+    devices_list[1]["hostname"]: devices_list[1],
+    devices_list[2]["hostname"]: devices_list[2],
 }
 
 print("devices_dict is:")
