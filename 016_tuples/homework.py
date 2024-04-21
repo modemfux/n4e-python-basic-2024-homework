@@ -28,6 +28,12 @@ intf_list.append("gi0/2")
 intf_list.sort()
 print(intf_list, end="\n\n")
 
+print("Task 1 variant 3 (slice and sort):")
+intf_list = ["gi0/0", "gi0/1", "gi0/22", "gi0/23", "gi0/3", "gi0/4"]
+intf_list[2:4] = ["gi0/2"]
+intf_list.sort()
+print(intf_list, end="\n\n")
+
 print("=" * 80, end="\n" * 2)
 # Task 2: Добавление элементов
 
