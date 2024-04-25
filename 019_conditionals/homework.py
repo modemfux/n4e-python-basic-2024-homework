@@ -99,16 +99,16 @@ for ip in ip_list:
     splitted = ip.split(".")
     all_numeric = all(map(lambda x: x.isnumeric(), splitted))
     if len(splitted) == 4 and all_numeric:
-        oct = int(splitted[0])
-        if oct in range(0, 128):
+        oct_ = int(splitted[0])
+        if oct_ in range(0, 128):
             ip_class = "A"
-        elif oct in range(128, 192):
+        elif oct_ in range(128, 192):
             ip_class = "B"
-        elif oct in range(192, 224):
+        elif oct_ in range(192, 224):
             ip_class = "C"
-        elif oct in range(224, 240):
+        elif oct_ in range(224, 240):
             ip_class = "D"
-        elif oct in range(240, 256):
+        elif oct_ in range(240, 256):
             ip_class = "E"
     if ip_class:
         print(f"{ip}: Class {ip_class}", end=MID_END)
@@ -207,6 +207,6 @@ print()
 print("Variant 2: via dict", end=MID_END)
 config_dict = {"access": access, "trunk": trunk}
 for intf in (intf1, intf2):
-    print(str(config_dict.get(intf.get("mode"))).format(**intf), end=MID_END)
+    print(config_dict.get(intf.get("mode", "")).format(**intf), end=MID_END)
 
 print(TASK_END)
