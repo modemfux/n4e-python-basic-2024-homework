@@ -92,10 +92,10 @@ devices = [
     "dsw1.lan.hq.net",
 ]
 
-domain = ".lan.hq.net"
-lan_devices = [device.split(".")[0] + domain for device in devices]
-for old, new in zip(devices, lan_devices):
-    print(f"Old name: {old}, New name: {new}", end=MID_END)
+domain = "lan.hq.net"
+lan_devices = [device for device in devices if domain in device]
+for device in lan_devices:
+    print(f"Device {device} in domain {domain}", end=MID_END)
 
 print(TASK_END)
 
