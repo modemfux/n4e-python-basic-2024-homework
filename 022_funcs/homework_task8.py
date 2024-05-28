@@ -30,12 +30,19 @@ from time import sleep
 # ```
 #
 
+# Старое, некорректное решение
+# def my_log(msg, *, dt=datetime.now):
+#     print(f"[{dt():%Y-%m-%d %H:%M:%S}]: {msg}")
 
-def my_log(msg, *, dt=datetime.now):
-    print(f"[{dt():%Y-%m-%d %H:%M:%S}]: {msg}")
+
+def my_log(msg: str, *, dt: str = "") -> None:
+    if dt == "":
+        dt = f"{datetime.now():%Y-%m-%d %H:%M:%S}"
+    print(f"[{dt}]: {msg}")
 
 
 if __name__ == "__main__":
     for i in range(3):
         my_log(f"Message {i}")
         sleep(2)
+    my_log("Message!", dt="very strange dt!")
